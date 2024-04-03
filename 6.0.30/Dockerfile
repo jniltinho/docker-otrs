@@ -6,7 +6,7 @@ FROM ubuntu:22.04
 # docker run -d --name otrs-server -p 8080:80 jniltinho/otrs-server:6.0.30
 
 RUN apt-get update && apt-get install -y nginx spawn-fcgi fcgiwrap cron \
-    libnet-ldap-perl libio-socket-ssl-perl libpdf-api2-perl \
+    libnet-ldap-perl libio-socket-ssl-perl libpdf-api2-perl net-tools \
     libsoap-lite-perl libgd-text-perl libgd-graph-perl curl wget \
     libcrypt-ssleay-perl libencode-hanextra-perl libmail-imapclient-perl libtemplate-perl \
     libxml-libxml-perl libxml-libxslt-perl libpdf-api2-simple-perl libauthen-ntlm-perl \
