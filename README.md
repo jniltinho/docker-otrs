@@ -4,12 +4,13 @@ Docker OTRS
 
 ## Build
 ```
-docker build --no-cache -t jniltinho/otrs-server .
+cd 6.0.30
+docker build --no-cache -t jniltinho/otrs-server:6.0.30 .
 ```
 
 ## Run
 ```
-docker run -d --name otrs-server -p 8080:80 jniltinho/otrs-server
+docker run -d --name otrs-server -p 8080:80 jniltinho/otrs-server:6.0.30
 ```
 
 
@@ -20,6 +21,7 @@ docker run -d --name otrs-server -p 8080:80 jniltinho/otrs-server
  - https://gist.github.com/ngi/c314079f11238d63488302d92a412344
  - https://gist.github.com/rdeavila/9694266
  - https://downloads.radiantsd.org/releases/
+ - https://github.com/znuny/Znuny
  - https://download.znuny.org/releases/
  - https://www.znuny.org/en/blog/welcome-znuny-7
  - https://doc.znuny.org/znuny_lts/releases/installupdate/install.html
