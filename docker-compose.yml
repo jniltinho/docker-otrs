@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  web:
+    image: jniltinho/otrs-server
+    ports:
+      - "8080:80"
+    volumes:
+      - /opt/otrs:/opt/otrs
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8080:80"
+    volumes:
+      - ./uploads.ini:/usr/local/etc/php/conf.d/php-phpmyadmin.ini
