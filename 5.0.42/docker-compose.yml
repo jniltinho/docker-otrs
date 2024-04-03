@@ -2,7 +2,7 @@ version: "3"
 
 services:
   otrs-server:
-    image: jniltinho/otrs-server:6.0.30
+    image: jniltinho/otrs-server:5.0.42
     restart: always
     ports:
       - "8080:80"

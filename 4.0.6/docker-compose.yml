@@ -2,7 +2,7 @@ version: "3"
 
 services:
   otrs-server:
-    image: jniltinho/otrs-server:6.0.30
+    image: jniltinho/otrs-server:4.0.6
     restart: always
     ports:
       - "8080:80"
@@ -10,7 +10,7 @@ services:
       - /opt/otrs:/opt/otrs
 
   mysql:
-    image: mariadb:11.3.2-jammy
+    image: mysql:5.6.51
     restart: always
     ports:
       - '3306:3306'
@@ -24,6 +24,7 @@ services:
     command: 
       - --table_definition_cache=800
       - --explicit_defaults_for_timestamp=true
+      - --default-authentication-plugin=mysql_native_password
       - --max_connections=800
     volumes:
       - ./dbdata:/var/lib/mysql
