@@ -11,3 +11,10 @@ docker build --no-cache -t jniltinho/otrs-server .
 ```
 docker run -d --name otrs-server -p 8080:80 jniltinho/otrs-server
 ```
+
+
+## Links
+ - https://gist.github.com/jniltinho/f6f12091235e466ccde51884c7f479a8
+ - https://hub.docker.com/r/jniltinho/otrs-server
+ - https://itgovernanceportal.com/otrs/otrs-znuny-ubuntu-nginx/?cn-reloaded=1
+ - https://gist.github.com/ngi/c314079f11238d63488302d92a412344
