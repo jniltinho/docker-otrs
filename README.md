@@ -19,3 +19,4 @@ docker run -d --name otrs-server -p 8080:80 jniltinho/otrs-server
  - https://itgovernanceportal.com/otrs/otrs-znuny-ubuntu-nginx/?cn-reloaded=1
  - https://gist.github.com/ngi/c314079f11238d63488302d92a412344
  - https://gist.github.com/rdeavila/9694266
+ - https://downloads.radiantsd.org/releases/
